@@ -1,0 +1,37 @@
+server: 
+  port: 8080
+  servlet: 
+    context-path: /qccr
+    
+spring: 
+  freemarker: 
+    #设置模板后缀名
+    suffix: .ftl
+    content-type: text/html
+    #设置编码
+    charset: UTF-8
+    cache: false
+    #模板文件的加载路径
+    template-loader-path: classpath:/static/template
+  #数据源配置
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/api-runnertwo?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+mapper:
+  
+    
+#mybatis配置 
+mybatis:
+  #mapper文件加载路径
+  mapper-locations: mapper/*.xml
+  #别名对应的实体对象扫描路径
+  type-aliases-package: com.qccr.api.runner.pojo
+  
+  loggin:
+    level:
+      root: info
+      com.lemon.mapper: trace
+   
