@@ -10,7 +10,7 @@ import java.io.IOException;
  * base 64编码
  *
  * @author xuhaifeng@qccr.com
- * @since Revision:1.0.0, Date: 2016年4月24日 下午2:51:07
+ * @since Revision:1.0.0, Date: 2020/06/08 下午2:51:07
  */
 public abstract class Base64 {
     static final char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".toCharArray();
