@@ -2,6 +2,8 @@ package com.qccr.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
+
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -44,6 +46,10 @@ public class Project implements Serializable {
 
     @ApiModelProperty(value = "创建时间")
     private Date createTime;
+
+    //非常重要，表里没有此字段，仅用来临时封装数据处理。具体是在另外表中
+    @TableField(exist=false)
+    private String hostId;
 
 
 }

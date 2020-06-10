@@ -1,6 +1,8 @@
 package com.qccr.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.qccr.common.ProjectHostVO;
+import com.qccr.mapper.HostMapper;
 import com.qccr.pojo.Api;
 import com.qccr.pojo.ApiRequestParam;
 import com.qccr.common.ApiListVO;
@@ -42,6 +44,14 @@ public class ApiServiceImpl extends ServiceImpl<ApiMapper, Api> implements ApiSe
 
 	@Autowired
 	ApiMapper apiMapper;
+//	@Autowired
+//	HostMapper hostMapper;
+
+//	@Override
+//	public ProjectHostVO showHostListByProject(Integer projectId) {
+//		// TODO Auto-generated method stub
+//		return apiMapper.showHostListByProject(projectId);
+//	}
 
 	@Override
 	public List<ApiListVO> showApiListByProject(Integer projectId) {
