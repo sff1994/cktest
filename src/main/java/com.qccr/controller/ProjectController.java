@@ -153,7 +153,7 @@ public class ProjectController {
 //		User user = (User) SecurityUtils.getSubject().getPrincipal();
 //		project.setCreateUser(user.getId());
 		projectService.updateById(project);
-		result = new Result("1",project, "保存项目信息");
+		result = new Result("1",project, "保存项目及host信息");
 		return result;
 	}
 
